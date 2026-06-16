@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img">
+  <defs>
+    <!-- Noir grain -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="1" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.3" />
+    </filter>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d8d8d8"/>
+      <stop offset="48%" stop-color="#c8c8c8"/>
+      <stop offset="52%" stop-color="#1a1a1f"/>
+      <stop offset="100%" stop-color="#0b0b0f"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+    </style>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="380" fill="url(#sky)"/>
+  
+  <!-- Dunes - back layer -->
+  <path d="M0 210 C 120 170, 240 195, 360 175 C 480 155, 540 190, 680 168 C 820 146, 960 180, 1200 160 L1200 380 L0 380Z" fill="#141418" opacity="1"/>
+  <!-- Dunes - mid -->
+  <path d="M0 235 C 150 200, 280 240, 420 215 C 560 190, 680 228, 820 206 C 960 184, 1080 220, 1200 200 L1200 380 L0 380Z" fill="#101014" opacity="1"/>
+  <!-- Dunes - front -->
+  <path d="M0 258 C 140 225, 300 268, 460 242 C 600 220, 740 258, 900 232 C 1020 212, 1110 248, 1200 230 L1200 380 L0 380Z" fill="#0c0c0f" opacity="1"/>
+
+  <!-- River / light path - like Benjamin's -->
+  <path d="M 760 198 C 735 210, 710 222, 695 238 C 680 252, 690 260, 672 270 C 650 282, 620 285, 600 295 L 580 295 C 605 280, 630 272, 645 258 C 660 244, 655 232, 672 218 C 690 205, 720 196, 745 188 Z" fill="#e8e8e8" opacity="0.95"/>
+  <path d="M 760 198 C 735 210, 710 222, 695 238 C 680 252, 690 260, 672 270 C 650 282, 620 285, 600 295 L 595 295 C 615 283, 642 276, 660 262 C 675 250, 670 238, 685 224 C 700 210, 728 198, 755 190 Z" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Subtle fedora hat watermark - merging your avatar -->
+  <g opacity="0.035" transform="translate(1020, 292) scale(0.42)">
+    <!-- Hat brim -->
+    <ellipse cx="0" cy="18" rx="78" ry="28" fill="#ffffff"/>
+    <!-- Hat crown -->
+    <ellipse cx="0" cy="-8" rx="42" ry="28" fill="#ffffff"/>
+    <rect x="-42" y="-8" width="84" height="26" fill="#ffffff"/>
+    <!-- Band -->
+    <rect x="-42" y="2" width="84" height="10" fill="#000" opacity="0.9"/>
+  </g>
+  <text x="1020" y="340" text-anchor="middle" fill="#ffffff" opacity="0.045" font-family="'IBM Plex Mono', monospace" font-size="9" letter-spacing="4">M63</text>
+
+  <!-- Center Text -->
+  <text x="600" y="138" text-anchor="middle" fill="#1a1a1a" font-family="'Fraunces', Georgia, 'Times New Roman', serif" font-size="44" font-weight="300" letter-spacing="0.2">
+    Welcome to Abdulmoin's GitHub
+  </text>
+  <text x="600" y="176" text-anchor="middle" fill="#3a3a3a" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="22" letter-spacing="2">&lt;/&gt;</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="212" text-anchor="middle" fill="#6b6b6b" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="5">FULL-STACK • CYBERSECURITY • TRADING</text>
+
+  <!-- Top thin rule -->
+  <line x1="540" y1="100" x2="660" y2="100" stroke="#999" stroke-width="0.8" opacity="0.6"/>
+  <!-- Bottom thin rule -->
+  <line x1="540" y1="232" x2="660" y2="232" stroke="#666" stroke-width="0.6" opacity="0.25"/>
+
+  <!-- Vignette -->
+  <rect width="1200" height="380" fill="none" stroke="#000" stroke-width="0" opacity="0"/>
+</svg>
